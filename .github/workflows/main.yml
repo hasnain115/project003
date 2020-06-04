@@ -28,11 +28,11 @@ jobs:
     version: 12 
     -name: GitHub Action for Yarn 
      uses:Borales/actions-yarn@v2.1.0
-    with:
-    cmd: install
+     with:
+     cmd: install
 
     -name: Creat Build
-      run: yarn build
+     run: yarn build
     
     - name: install surge 
       run: npm install -g surge
