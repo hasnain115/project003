@@ -32,11 +32,12 @@ jobs:
       with: 
        # Yarn command
          cmd: install
+
     - name: creating build
       run: yarn build
 
     - name: installing surge
-      run: npm install -g surge
+      run: npm install --global surge
       
     - name: deploying on surge
       run: surge ./build http://project003_hasnain.surge.sh/ --token ${{surge.SECRET_TOKEN}}
